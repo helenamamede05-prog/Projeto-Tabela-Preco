@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#5d78ff;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.container{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    width:280px;
+    background:#fff;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.topo{
+    color:white;
+    text-align:center;
+    padding:15px 10px 40px;
+    clip-path:polygon(0 0,100% 0,100% 70%,50% 100%,0 70%);
+}
+
+.verde{
+    background:#20e86b;
+}
+
+.laranja{
+    background:#ef7a2f;
+}
+
+.azul{
+    background:#1dc5c9;
+}
+
+.topo h2{
+    margin-bottom:10px;
+}
+
+.preco{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+.moeda{
+    font-size:18px;
+    margin-top:10px;
+}
+
+.valor{
+    font-size:52px;
+    font-weight:bold;
+    line-height:1;
+}
+
+.centavos{
+    font-size:18px;
+    margin-top:10px;
+}
+
+.conteudo{
+    padding:20px;
+}
+
+.descricao{
+    text-align:center;
+    color:#666;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+ul{
+    list-style:none;
+}
+
+ul li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 0;
+    border-bottom:1px solid #eee;
+    font-size:14px;
+    color:#444;
+}
+
+.ok{
+    color:#21c45a;
+}
+
+.nao{
+    color:#ff4d4d;
+}
+
+.btn{
+    width:100%;
+    border:none;
+    color:white;
+    padding:12px;
+    margin-top:20px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.verde-btn{
+    background:#20e86b;
+}
+
+.verde-btn:hover{
+    background:#18c45a;
+}
+
+.laranja-btn{
+    background:#ef7a2f;
+}
+
+.laranja-btn:hover{
+    background:#d76721;
+}
+
+.azul-btn{
+    background:#1dc5c9;
+}
+
+.azul-btn:hover{
+    background:#16aeb2;
+}
+
+/* Responsivo */
+
+@media(max-width:900px){
+    .container{
+        gap:20px;
+    }
+
+    .card{
+        width:320px;
+    }
+}
+
+@media(max-width:600px){
+    .card{
+        width:100%;
+        max-width:350px;
+    }
+}
